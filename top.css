@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.top1{
+    animation: degrade 5s infinite alternate;
+    background: linear-gradient( 45deg, darkred, red, blueviolet, purple, darkblue, blue, darkcyan, aqua, lightblue, lightgreen, chartreuse, lime, darkgreen, yellow, darkgoldenrod, coral, orange, brown);
+    background-size: 500% 100%;
+    width: 800px;
+    height: 777px;
+    padding: 10px;
+    margin: 0 auto;
+    .b1{
+        background-color: yellow;
+        bottom: 0;
+        left: 370px;
+        width: 100px;
+        height: 100px;
+    }
+    .b2{
+        background-color: green;
+        bottom: 0;
+        right: 369px;
+        width: 100px;
+        height: 100px;
+    }
+    .b3{
+        background-color: black;
+        color: white;
+        top: 0;
+        left: 370px;
+        width: 100px;
+        height: 100px;
+    }
+    .b4{
+        background-color: white;
+        top: 0;
+        right: 369px;
+        width: 100px;
+        height: 100px;
+    }
+}
+@keyframes degrade {
+    0%{
+        background-position-x: 10%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+.b1,.b2, .b3, .b4{
+    position: fixed;
+}
